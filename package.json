@@ -1,0 +1,26 @@
+{
+  "name": "task-manager-1",
+  "version": "1.0.0",
+  "description": "task manager built using nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start":"node src/index.js",
+    "dev":"nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ripunjai2/task-manager.git"
+  },
+  "author": "Ripunjai Rai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ripunjai2/task-manager/issues"
+  },
+  "homepage": "https://github.com/Ripunjai2/task-manager#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.16",
+    "validator": "^10.9.0"
+  }
+}
