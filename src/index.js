@@ -76,7 +76,10 @@ app.patch('/tasks/:id',async(req,res)=>{
 
     try{
         const task=Task.findByIdAndUpdate(req.params.id,req.body,{new:true,runValidators:true});
-        if(!task){}
+        if(!task){
+            return res.status(400).send('Invalid task!');
+        }
+        res.send(task);
     }catch(error){
 
     }
