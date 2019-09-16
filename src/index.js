@@ -1,8 +1,8 @@
 const express=require('express');
 require('./db/mongoose.js');
 
-const User=require('./model/user');
-User.findByCredentials('rohit2@gmail.com','sabMadarchodHain');
+// const User=require('./model/user');
+// User.findByCredentials('rohit2@gmail.com','sabMadarchodHain');
 
 const userRouter=require('./routers/user');
 const taskRouter=require('./routers/task');
